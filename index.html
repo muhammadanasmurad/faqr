@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Awan-e-Faqr-e-Naushahia - Serving Faith, Strengthening Community, Promoting Peace in Pakistan. Religious guidance, education, community welfare, and peacebuilding initiatives.">
+    <meta name="keywords" content="Awan-e-Faqr-e-Naushahia, Pakistan, religious organization, charity, community service, Islamic education, peacebuilding">
+    <meta name="author" content="Awan-e-Faqr-e-Naushahia">
+    <title>Awan-e-Faqr-e-Naushahia | Serving Faith • Strengthening Community • Promoting Peace</title>
+    <script>
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+    </script>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <img src="logo.png" alt="Awan-e-Faqr-e-Naushahia Logo" class="logo-dark">
+                        <img src="whitelogobg.png" alt="Awan-e-Faqr-e-Naushahia Logo" class="logo-light">
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="founder.html" class="nav-link">Founder</a></li>
+                    <li><a href="education.html" class="nav-link">Education</a></li>
+                    <li><a href="donations.html" class="nav-link">Donate</a></li>
+                    <li><a href="Foundation.html" class="nav-link">Foundation</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-crown"></i>
+                </button>
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/awanefaqrenaushahia" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/naushahifoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Awan-e-Faqr-e-Naushahia</h1>
+                <p class="hero-tagline">Serving Faith • Strengthening Community • Promoting Peace</p>
+                <p class="hero-description">Dedicated to uplifting communities across Pakistan through spiritual guidance, education, and compassionate service.</p>
+                <div class="hero-buttons">
+                    <a href="donations.html" class="btn btn-primary">Donate Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="section-title">Welcome to Awan-e-Faqr-e-Naushahia</h2>
+                <p class="intro-text">Awan-e-Faqr-e-Naushahia is a Pakistan-based religious and charitable organization committed to serving communities through faith-based initiatives, education, and social welfare programs. We strive to create positive change by fostering spiritual growth, moral development, and community harmony across Pakistan.</p>
+                
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>To provide religious guidance, quality education, and essential support services that empower communities, strengthen families, and promote peace and understanding throughout Pakistan.</p>
+                </div>
+                
+                <div class="vision-box">
+                    <h3>Our Vision</h3>
+                    <p>To be a beacon of faith, knowledge, and compassion, inspiring individuals and communities across Pakistan to live with integrity, wisdom, and mutual respect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Namaz Timings Section -->
+    <section class="namaz-timing section bg-light">
+        <div class="container">
+            <h2>Namaz Timings</h2>
+            
+            <div class="namaz-layout">
+                <!-- Left Side: Video & Inspiration -->
+                <div class="namaz-content">
+                    <div class="video-container">
+                        <!-- Feature Image -->
+                        <img src="namazimage.jpg" alt="Prayer Times Inspiration" class="namaz-feature-image">
+                    </div>
+                    <div class="namaz-text">
+                        <h3>The Pillar of Faith</h3>
+                        <p>Salah (Prayer) is the connection between a believer and the Divine. It brings tranquility to the heart, discipline to life, and purifies the soul. "Indeed, prayer prohibits immorality and wrongdoing." (Quran 29:45)</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: Namaz Schedule -->
+                <div class="namaz-table-wrapper" id="namaz-container">
+                    <div class="loading-namaz">
+                        <i class="fas fa-spinner fa-spin"></i> Loading Prayer Times...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Teasers -->
+    <section class="section teasers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Our Work</h2>
+                <p class="section-subtitle">Discover how we serve communities across Pakistan</p>
+            </div>
+            
+            <div class="teasers-grid">
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="ESTD.png" alt="About Us">
+                    </div>
+                    <h3>About Us</h3>
+                    <p>Learn about our history, foundation, and the values that guide our work in serving communities across Pakistan.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="IMG_2736.jpg" alt="Foundation">
+                    </div>
+                    <h3>Naushahi Foundation</h3>
+                    <p>Discover our comprehensive programs including religious guidance, education, community welfare, peacebuilding, and youth development.</p>
+                    <a href="Foundation.html" class="btn btn-outline">View Programs →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="IMG_2721.JPG" alt="Education & Learning">
+                    </div>
+                    <h3>Education & Learning</h3>
+                    <p>Explore our educational programs, study circles, and learning opportunities available both online and at our centers.</p>
+                    <a href="education.html" class="btn btn-outline">Explore Courses →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="ESTD.png" alt="Donations & Support">
+                    </div>
+                    <h3>Donations & Support</h3>
+                    <p>Support our mission through Zakat, Sadaqah, or general donations. Multiple Pakistan-friendly payment methods available.</p>
+                    <a href="donations.html" class="btn btn-outline">Donate Now →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="IMG_2727.JPG" alt="Centres & Outreach">
+                    </div>
+                    <h3>Centres & Outreach</h3>
+                    <p>Find our centers in major cities and learn about our rural outreach programs serving communities across Pakistan.</p>
+                    <a href="contact.html" class="btn btn-outline">Find Centers →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="IMG_2733.JPG" alt="Join Us">
+                    </div>
+                    <h3>Join Us</h3>
+                    <p>Become a volunteer, join as a community member, or participate in our youth development programs.</p>
+                    <a href="contact.html" class="btn btn-outline">Get Involved →</a>
+                </div>
+                
+                <div class="teaser-card">
+                    <div class="teaser-image">
+                        <img src="IMG_2728.JPG" alt="Contact Us">
+                    </div>
+                    <h3>Contact Us</h3>
+                    <p>Get in touch with us for inquiries, support, or to learn more about our programs and services.</p>
+                    <a href="contact.html" class="btn btn-outline">Contact →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Preview -->
+    <section class="section values-preview-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-image">
+                        <img src="IMG_2728.JPG" alt="Faith & Devotion">
+                    </div>
+                    <h4>Faith & Devotion</h4>
+                    <p>Rooted in spiritual principles and Islamic teachings</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-image">
+                        <img src="IMG_2721.JPG" alt="Education & Knowledge">
+                    </div>
+                    <h4>Education & Knowledge</h4>
+                    <p>Empowering through learning and moral training</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-image">
+                        <img src="ESTD.png" alt="Community Service">
+                    </div>
+                    <h4>Community Service</h4>
+                    <p>Dedicated to uplifting those in need</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-image">
+                        <img src="IMG_2736.jpg" alt="Peace & Harmony">
+                    </div>
+                    <h4>Peace & Harmony</h4>
+                    <p>Building bridges and fostering understanding</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Make a Difference Today</h2>
+                <p>Join us in serving communities across Pakistan through faith, education, and compassionate service. Your support makes our work possible.</p>
+                <div class="cta-buttons">
+                    <a href="donations.html" class="btn btn-primary">Support Our Mission</a>
+                    <a href="contact.html" class="btn btn-secondary">Become a Volunteer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                   <h3>ایوان فقرِ نوشاہیہ</h3>
+                    <p class="footer-tagline">Serving Faith • Strengthening Community • Promoting Peace</p>
+                    <p>Awan-e-Faqr-e-Naushahia is dedicated to serving communities across Pakistan through faith, education, and compassionate service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founder.html">Founder & Leadership</a></li>
+                        <li><a href="Foundation.html">Naushahi Foundation</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="donations.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="education.html">Religious Education</a></li>
+                        <li><a href="Foundation.html">Community Welfare</a></li>
+                        <li><a href="Foundation.html">Youth Development</a></li>
+                        <li><a href="Foundation.html">Peacebuilding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Awan-e-Faqr-e-Naushahia. All rights reserved.</p>
+                <p>Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

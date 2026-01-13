@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Naushahi Foundation | Serving communities through faith, food distribution, education, and welfare.">
+    <meta name="keywords" content="Naushahi Foundation, food distribution, education, community welfare, Pakistan">
+    <meta name="author" content="Naushahi Foundation">
+    <title>Naushahi Foundation</title>
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+            if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo-link">
+                    <div class="logo">
+                        <img src="logo.png" alt="Naushahi Foundation Logo" class="logo-dark">
+                        <img src="whitelogobg.png" alt="Naushahi Foundation Logo" class="logo-light">
+                    </div>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="founder.html" class="nav-link">Founder</a></li>
+                    <li><a href="education.html" class="nav-link">Education</a></li>
+                    <li><a href="donations.html" class="nav-link">Donate</a></li>
+                    <li><a href="Foundation.html" class="nav-link active">Foundation</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-social">
+                    <a href="https://www.facebook.com/NaushahiFoundation" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/naushahifoundation" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Naushahi Foundation</h1>
+            <p class="page-subtitle">Serving Communities Across Pakistan</p>
+        </div>
+    </section>
+
+    <!-- Foundation Introduction Section -->
+    <section class="foundation-intro-enhanced section">
+        <div class="container">
+            <div class="foundation-intro-content">
+                <h2 class="section-title">Introduction to the Foundation</h2>
+                <p class="intro-lead">Established in 2020 under the visionary guidance of Sahabzada Muhammad Mounis Murad Naushahi and his siblings, the Naushahi Foundation stands as a beacon of compassion. Rooted in the spiritual legacy of the Naushahi order, we are dedicated to serving humanity with dignity, integrity, and unwavering commitment.</p>
+                
+                <div class="intro-main">
+                    <h3>Our Mission</h3>
+                    <p>To embody the spirit of selfless service by uplifting the underserved, providing essential sustenance, and fostering a community built on empathy and mutual support. We believe that true worship is found in the service of God's creation.</p>
+                    
+                    <h3>Core Values</h3>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Compassion (Khidmat)</h4>
+                                <p>Serving with humility and grace, recognizing the divine spark in every individual.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Integrity (Amanat)</h4>
+                                <p>Upholding the highest standards of trust, transparency, and ethical responsibility.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Community (Ittihad)</h4>
+                                <p>Strengthening the social fabric through unity, cooperation, and shared welfare.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Dignity (Izzat)</h4>
+                                <p>Respecting the sanctity and honor of every human life we are privileged to serve.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Founder's Vision</h3>
+                    <p class="founder-vision">"The path to spiritual elevation lies in the service of humanity." Guided by this profound truth and the legacy of Allama Mian Noor Muhammad Nusrat Naushahi, our foundation strives to be a source of relief for the weary and hope for the destitute.</p>
+                    
+                    <p class="commitment">From our inception, we have been steadfast in our commitment to hunger relief, educational empowerment, and social welfare. We envision a society where compassion is not just an act, but a way of life, creating lasting positive change across Pakistan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Donation Section -->
+    <section class="donation section">
+        <div class="container">
+            <h2>Make a Regular Donation</h2>
+            <p>Your donation helps us continue providing food, ration packages, and support to those in need.</p>
+            <a href="donations.html" class="donate-btn">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Foundation Work (Gallery) -->
+    <section class="foundation-gallery section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work & Events</h2>
+                <p class="section-subtitle">Showcasing our impact and community engagement</p>
+            </div>
+            <div class="gallery-grid-enhanced">
+                <div class="gallery-item-enhanced" data-image="IMG_2721.JPG">
+                    <img src="foundation1.jpg" alt="Education & Training Programs">
+                    <div class="gallery-overlay">
+                        <h4>Education & Training</h4>
+                        <p>Educational programs and workshops</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-enhanced" data-image="IMG_2727.JPG">
+                    <img src="foundation2.jpg" alt="Community Outreach">
+                    <div class="gallery-overlay">
+                        <h4>Community Outreach</h4>
+                        <p>Reaching out to communities</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-enhanced" data-image="IMG_2728.JPG">
+                    <img src="foundation3.jpg" alt="Religious Guidance">
+                    <div class="gallery-overlay">
+                        <h4>Religious Guidance</h4>
+                        <p>Spiritual and religious programs</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-enhanced" data-image="IMG_2733.JPG">
+                    <img src="foundation4.jpg" alt="Youth Development">
+                    <div class="gallery-overlay">
+                        <h4>Youth Development</h4>
+                        <p>Youth programs and activities</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-enhanced" data-image="IMG_2736.jpg">
+                    <img src="foundation5.jpg" alt="Peacebuilding Initiatives">
+                    <div class="gallery-overlay">
+                        <h4>Peacebuilding</h4>
+                        <p>Promoting peace and harmony</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item-enhanced" data-image="ESTD.png">
+                    <img src="foundation6.jpg" alt="Foundation Establishment">
+                    <div class="gallery-overlay">
+                        <h4>Foundation</h4>
+                        <p>Our foundation and legacy</p>
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image" alt="Gallery Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next" id="lightbox-next">&#10095;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>نوشاہی فاؤنڈیشن</h3>
+                    <p class="footer-tagline">Serving Communities • Providing Hope • Building Futures</p>
+                    <p>Naushahi Foundation is dedicated to serving communities across Pakistan through humanitarian support, education, and compassionate service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="founder.html">Founder & Leadership</a></li>
+                        <li><a href="Foundation.html">Naushahi Foundation</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="donations.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="education.html">Religious Education</a></li>
+                        <li><a href="Foundation.html">Community Welfare</a></li>
+                        <li><a href="Foundation.html">Food Distribution</a></li>
+                        <li><a href="Foundation.html">Youth Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Naushahi Foundation. All rights reserved.</p>
+                <p>Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="foundation-gallery.js"></script>
+
+
+
+</body>
+</html>
